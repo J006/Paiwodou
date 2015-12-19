@@ -52,8 +52,7 @@
 3个形式就是:Pocket,Album,RecommendPhoto  
 
 13.ImageDetailView  
-该文件夹包括点击专辑界面Album或者单张RecommendPhoto时跳转到的一个展示界面TotalPhotoViewController,该界面拥有分享功能  
-其中还带一个评论界面CommentViewController  
+该文件夹包括点击专辑界面Album或者单张RecommendPhoto时跳转到的一个展示界面TotalPhotoViewController,该界面拥有分享功能其中还带一个评论界面CommentViewController.   
 ImageDetailView为一个单张图片点击后大图的展示,提供放大缩小和收藏等功能  
 
 14.MainBanner  
