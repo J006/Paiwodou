@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "438e5d03-1f20-4092-9831-03c32c37bc33++5326",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "438e5d03-1f20-4092-9831-03c32c37bc33++5326" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "438e5d03-1f20-4092-9831-03c32c37bc33++5326" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C5BFAC7-2751-459D-B661-2FF504E829B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "438e5d03-1f20-4092-9831-03c32c37bc33++5326" : "ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DouPaiwo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/project\/DouPaiwo\/DouPaiwo\/DouPaiwo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/duopaizhao.com",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "438e5d03-1f20-4092-9831-03c32c37bc33++5326"
+    }
+  ]
+}

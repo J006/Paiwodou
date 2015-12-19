@@ -1,0 +1,156 @@
+//
+//  DouPrefixHeader.pch
+//  DouPaiwo
+//
+//  Created by J006 on 15/6/2.
+//  Copyright (c) 2015年 paiwo.co. All rights reserved.
+//
+
+#ifndef DouPaiwo_DouPrefixHeader_pch
+#define DouPaiwo_DouPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif
+//常用的工具类
+#ifdef __OBJC__
+
+  #import "UIImageView+Common.h"
+  #import "UIColor+expanded.h"
+  #import "UIImage+Common.h"
+  #import "UITableView+Common.h"
+  #import "UIView+Common.h"
+
+#endif
+
+
+//常用变量
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kHigher_iOS_6_1 (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+#define kHigher_iOS_6_1_DIS(_X_) ([[NSNumber numberWithBool:kHigher_iOS_6_1] intValue] * _X_)
+#define kNotHigher_iOS_6_1_DIS(_X_) (-([[NSNumber numberWithBool:kHigher_iOS_6_1] intValue]-1) * _X_)
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width  [UIScreen mainScreen].bounds.size.width
+#define kMainBanner_Width 320
+#define kMainBanner_Height 270
+//#define kColorBackGround [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]
+#define kTotalDefaultPadding 20
+#define kTotalDefaultYPadding 20
+#define kColorBackGround [UIColor whiteColor]
+#define kColorBannerLine [UIColor colorWithRed:216/255.0 green:216/255.0 blue:216/255.0 alpha:1]
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (kScreen_Width/320))
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kColorPocketsAndPhotosButton [UIColor colorWithRed:65/255.0 green:65/255.0 blue:65/255.0 alpha:1]
+#define kColorPocketsAndPhotos [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xe5e5e5"]
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kMiddleBannerX  20
+#define kMiddleBannerAndTopBannerDistanceY  13
+#define kMiddleBannerLineDistance  270
+#define kFollowPhotoersWidth  142
+#define kFollowPhotoersHeight  36
+#define kPocketViewX  24
+#define kPocketViewWidth  270
+#define kPocketViewHeight 334
+#define kmiddleBannerWidth  270
+#define kmiddleBannerHeight 126
+#define PocketAndPhotoLabelWidth 190
+#define PocketAndPhotoLabelHeight 22
+#define kDetailTopViewHeight  49
+#define photoDetailDistanceVerticalX             0
+#define pageToolBarHeight 49
+#define defaultTopViewHeight 57
+#define defaultCellHeight 90
+#define defaultAvatarSize 60
+#define kprofileBannerWidth  280
+#define kprofileBannerHeight 84
+#define kBackButtonFontSize 16
+#define pageNaviBarHeight 45
+#define kStatusBarHeight 20
+#define kmaxImageNumsForChangeLine 2
+#define kpushViewTime 0.2
+#define kdefaultTotalScreen_Width 320
+#define kdefaultTotalScreen_Height 568
+#define Code_Login @"Code_Login"
+#define SourceHanSansLight10 [UIFont fontWithName:@"SourceHanSansCN-Light" size:10]
+#define SourceHanSansLight12 [UIFont fontWithName:@"SourceHanSansCN-Light" size:12]
+#define SourceHanSansLight13 [UIFont fontWithName:@"SourceHanSansCN-Light" size:13]
+#define SourceHanSansLight14 [UIFont fontWithName:@"SourceHanSansCN-Light" size:14]
+#define SourceHanSansLight21 [UIFont fontWithName:@"SourceHanSansCN-Light" size:21]
+#define SourceHanSansLight36 [UIFont fontWithName:@"SourceHanSansCN-Light" size:36]
+
+#define SourceHanSansNormal11 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:11]
+#define SourceHanSansNormal12 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:12]
+#define SourceHanSansNormal13 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:13]
+#define SourceHanSansNormal14 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:14]
+#define SourceHanSansNormal15 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:15]
+#define SourceHanSansNormal16 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:16]
+#define SourceHanSansNormal17 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:17]
+#define SourceHanSansNormal18 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:18]
+#define SourceHanSansNormal19 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:19]
+#define SourceHanSansNormal20 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:20]
+#define SourceHanSansNormal24 [UIFont fontWithName:@"SourceHanSansCN-Normal" size:24]
+
+#define SourceHanSansMedium11 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:11]
+#define SourceHanSansMedium12 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:12]
+#define SourceHanSansMedium14 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:14]
+#define SourceHanSansMedium15 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:15]
+#define SourceHanSansMedium16 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:16]
+#define SourceHanSansMedium18 [UIFont fontWithName:@"SourceHanSansCN-Medium" size:18]
+
+#define HeitiSCMedium13 [UIFont fontWithName:@"STHeitiSC-Medium" size:13]
+
+//#define HeitiSCLight14 [UIFont fontWithName:@"STHeitiSC-Light" size:14]
+//#define HeitiSCLight12 [UIFont fontWithName:@"STHeitiSC-Light" size:12]
+//#define HeitiSCLight10 [UIFont fontWithName:@"STHeitiSC-Light" size:10]
+//API
+#define kAPI_MainURL @"121.41.24.213"
+#define kAPI_MainURLPORT 8333
+#define pageSizeDefault 10
+#define defaultSelfUserUrlPrefix  @"paiwo.co/"
+#define defaultImageHeadUrl @"http://image.paiwo.co/"
+#define defaultMainUrl @"http://duopaizhao.com/"
+#define defaultShareMainUrl @"http://duopaizhao.com/photos/"
+#define defaultSharePocketMainUrl @"http://duopaizhao.com/pocket/"
+#define kdefaultUploadPostURL @"http://paiwo.oss-cn-hangzhou.aliyuncs.com"
+#define imageSquareTailUrl @"@!560x560"
+#define imageSmallTailUrl @"@!120x120"
+#define image1d5TailUrl @"@!1d5"
+#define imageBannerUrl @"@!banner"
+#define image1d10TailUrl @"@!1d10"
+//weibo
+#define kWeiboAppKey @"2212142676"
+#define kWeiboRedirectURI @"http://paiwo.co"
+#define kWeiboDefaultLoginPrefix @"weibo_open_id_"
+//weixin
+#define kWeixinAppKey @"wx084864e4bfd49b12"
+#define kWeixinSecret @"7f50d6007e090d7de0fc2e84598b5377"
+//#define kWeixinAppKey @"wxd804e40c6e964035"
+//#define kWeixinSecret @"6be0d59c19085063da7ef4b61b550d4b"
+#define kWeixinDefaultLoginPrefix @"weixin_open_id_"
+//QQ
+#define kQQAppKey @"101164290"
+#define kQQSecret @"cb62a6e089b65c5c1f3f0c8561d6e1e5"
+#define kQQDefaultLoginPrefix @"qq_open_id_"
+//MJ Refresh
+#define kMJRefreshNomoreData @"没有更多动态信息..."
+#define kMJRefreshNomoreUser @"没有更多用户信息加载..."
+//重新获取的CD
+#define timeSetOut  10
+//链接颜色
+#define kLinkAttributes     @{(__bridge NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[UIColor colorWithHexString:@"0x3bbd79"].CGColor}
+#define kLinkAttributesActive       @{(NSString *)kCTUnderlineStyleAttributeName : [NSNumber numberWithBool:NO],(NSString *)kCTForegroundColorAttributeName : (__bridge id)[[UIColor colorWithHexString:@"0x1b9d59"] CGColor]}
+@end
+

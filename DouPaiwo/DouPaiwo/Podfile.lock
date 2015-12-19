@@ -1,0 +1,117 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.0)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - DZQQLib (2.8.1)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - GPUImage (0.1.7)
+  - Masonry (0.6.2)
+  - MBProgressHUD (0.9.1)
+  - MJRefresh (2.4.10)
+  - ODRefreshControl (1.2)
+  - RDVTabBarController (1.1.9)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SSWeChatSDK (1.5.0)
+  - TPKeyboardAvoiding (1.2.9)
+  - TTTAttributedLabel (1.13.4)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UIImage+BlurredFrame (0.0.4)
+  - WebViewJavascriptBridge (4.1.4)
+  - Weibo (2.4.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AFNetworking
+  - BlocksKit
+  - DZQQLib
+  - FMDB
+  - GPUImage
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - ODRefreshControl
+  - RDVTabBarController
+  - Reachability
+  - ReactiveCocoa
+  - SDWebImage
+  - SSWeChatSDK
+  - TPKeyboardAvoiding
+  - TTTAttributedLabel
+  - UIActivityIndicator-for-SDWebImage
+  - UIImage+BlurredFrame
+  - WebViewJavascriptBridge
+  - Weibo
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: dcd0e3cf07458875e93f5f0c27a7bac0902c26bb
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  DZQQLib: 3419d72f780ee1a116d26ae57ca4639185a0f4e1
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJRefresh: e52328552ed9cbfce3501e3820b18bf7643c65cc
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SSWeChatSDK: e4c8f8234285ef3ffc040424ff9ef472290e0ff6
+  TPKeyboardAvoiding: ff1ee4e5a5a0c119b965552af8f183868ea20207
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  UIImage+BlurredFrame: ad2f7195c6947ea3117c7d202f75a51958d5061a
+  WebViewJavascriptBridge: f10ac16f2cd3adf2b941bd79477c55a8f6e01044
+  Weibo: ed569ffed6eb043a159ac3b01dc5122b4e1fd77a
+
+COCOAPODS: 0.38.2
